@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="server" method="post">
+      <h3>Înregistrare</h3>
+      <p>Completați datele de mai jos pentru a vă înregistra.</p>
+
+      <!-- Prenume -->
+      <label for="prenume">Prenume:</label>
+      <input
+        type="text"
+        id="prenume"
+        name="prenume"
+        placeholder="Introduceți prenumele"
+        required
+      />
+      <br /><br />
+
+      <!-- Nume -->
+      <label for="nume">Nume:</label>
+      <input
+        type="text"
+        id="nume"
+        name="nume"
+        placeholder="Introduceți numele"
+        required
+      />
+      <br /><br />
+
+      <!-- Parola -->
+      <label for="parola">Parolă:</label>
+      <input
+        type="password"
+        id="parola"
+        name="parola"
+        placeholder="Introduceți parola"
+        required
+      />
+      <br /><br />
+
+      <!-- Confirmare parolă -->
+      <label for="confirmare">Confirmare parolă:</label>
+      <input
+        type="password"
+        id="confirmare"
+        name="confirmare"
+        placeholder="Confirmați parola"
+        required
+      />
+      <br /><br />
+
+      <!-- Telefon -->
+      <label for="telefon">Număr de telefon:</label>
+      <input
+        type="tel"
+        id="telefon"
+        name="telefon"
+        placeholder="Ex: 07xxxxxxxx"
+        required
+      />
+      <br /><br />
+
+      <!-- Gen (radio buttons) -->
+      <p>Alegeți genul:</p>
+      <input type="radio" id="barbat" name="gen" value="Barbat" checked />
+      <label for="barbat">Bărbat</label>
+      <br />
+
+      <input type="radio" id="femeie" name="gen" value="Femeie" />
+      <label for="femeie">Femeie</label>
+      <br />
+
+      <input type="radio" id="altul" name="gen" value="Altul" />
+      <label for="altul">Altul</label>
+      <br /><br />
+
+      <!-- Vârstă -->
+      <label for="varsta">Vârstă:</label>
+      <input
+        type="number"
+        id="varsta"
+        name="varsta"
+        min="1"
+        max="120"
+        placeholder="Introduceți vârsta"
+        required
+      />
+      <br /><br />
+
+      <!-- Fișier -->
+      <label for="fisier">Încărcați un fișier:</label>
+      <input type="file" id="fisier" name="fisier" />
+      <br /><br />
+
+      <!-- Culoare preferată -->
+      <label for="culoare">Alegeți culoarea preferată:</label>
+      <input type="color" id="culoare" name="culoare" />
+      <br /><br />
+
+      <!-- Range -->
+      <label for="cantitate">Cantitate articole:</label>
+      <input type="range" id="cantitate" name="cantitate" min="1" max="100" />
+      <br /><br />
+
+      <!-- Acceptare termeni -->
+      <input type="checkbox" id="termeni" name="termeni" required />
+      <label for="termeni">Accept termenii și condițiile</label>
+      <br /><br />
+
+      <!-- Butoane -->
+      <button type="submit">Înregistrare</button>
+      <button type="reset">Resetare</button>
+    </form>
+  </body>
+</html>

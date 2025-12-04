@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Va rog sa va inregistrati</h1>
+    <form action="server" method="post">
+      <label for="nume">Nume:</label><br />
+      <input
+        type="text"
+        name="nume"
+        id="nume"
+        placeholder="Numele Dumneavostra"
+      />
+      <br /><br />
+      <label for="prenume">Prenume:</label><br />
+      <input
+        type="text"
+        name="prenume"
+        id="prenume"
+        placeholder="Prenumele Dumneavoastra"
+      /><br /><br />
+      <label for="pass" Parola>Parola:</label><br />
+      <input
+        type="password"
+        name="pass"
+        id="pass"
+        placeholder="Setati parola"
+      /><br /><br />
+      <label for="tara">Tara de origine:</label><br />
+      <input
+        type="text"
+        name="tara"
+        id="tara"
+        placeholder="Scrieti tara de origine"
+      />
+      <br /><br />
+      <p>Tipul de utilizator:</p>
+      <input
+        type="radio"
+        name="utilizatortip"
+        id="pfizica"
+        value="PersoanaFizica"
+        checked="checked"
+      />
+      <label for="pfizica">Persoana Fizica</label><br /><br />
+
+      <input
+        type="radio"
+        name="utilizatortip"
+        id="pjuridica"
+        value="PersoanaJuridica"
+      />
+      <label for="pjuridica">Persoana Juridica</label><br /><br />
+
+      <input
+        type="radio"
+        name="utilizatortip"
+        id="organizatie"
+        value="Organizatie"
+      />
+      <label for="organizatie">Organizatie</label><br /><br />
+
+      <input type="number" name="ani" id="ani" min="16" max="99" />
+      <label for="ani">Indicati Varsta</label><br /><br />
+
+      <label for="puncte">Experienta in Domeniul IT(1-10)</label><br />
+      <input type="range" name="puncte" id="puncte" min="0" max="10" />
+      <p>Verificare</p>
+      <input
+        type="checkbox"
+        name="intrebare"
+        id="intrebare"
+        value="Nusuntrobot"
+      />
+      <label for="intrebare">Nu sunt Robot</label><br /><br />
+      <input type="submit" value="Trimite" />
+    </form>
+  </body>
+</html>
