@@ -77,6 +77,46 @@
         value="Nusuntrobot"
       />
       <label for="intrebare">Nu sunt Robot</label><br /><br />
+      <select name="country" id="country">
+        <option value="Serbia">Serbia</option>
+        <option value="Romania" selected>Romania</option>
+        <option value="Ukraine">Ukraine</option></select
+      ><br /><br />
+      <select name="country" id="country" multiple="multiple">
+        <option value="Serbia">Serbia</option>
+        <option value="Romania" selected="selected">Romania</option>
+        <option value="Ukraine">Ukraine</option></select
+      ><br /><br />
+      <select>
+        <optgroup label="Europe">
+          <option value="Romania">Romania</option>
+          <option value="Serbia">Serbia</option>
+          <option value="Ukraine">Ukraine</option>
+        </optgroup>
+        <optgroup label="Asia">
+          <option value="China">China</option>
+          <option value="India">India</option>
+        </optgroup></select
+      ><br /><br />
+      <form action="script.php" method="post" name="demo_form">
+        <fieldset>
+          <legend>Personal info</legend>
+          <label for="name">First name:</label><br />
+          <input type="text" name="name" id="name" /><br />
+
+          <label for="surname">Last name:</label><br />
+          <input type="text" name="surname" id="surname" /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Contact</legend>
+          <label for="email">Email:</label><br />
+          <input type="text" name="email" id="email" /><br />
+
+          <label for="phone">Phone:</label><br />
+          <input type="text" name="phone" id="phone" />
+        </fieldset>
+      </form>
       <input type="submit" value="Trimite" />
     </form>
   </body>
