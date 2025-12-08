@@ -1,9 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #electronics p {
+        color: blue;
+      }
+      #electronics > p {
+        color: red;
+      }
+      #electronics + .info {
+        font-weight: bold;
+      }
+      #electronics ~ .info {
+        color: yellow;
+      }
+      span.sale {
+        color: green;
+      }
+    </style>
   </head>
   <body>
-    <h1 id="titlu">Hello</h1>
+    <div class="category" id="electronics">
+      <h2>Electronics</h2>
+      <div class="product">
+        <p>Phone</p>
+        <span class="sale">Sale</span>
+      </div>
+      <div class="product">
+        <p>Laptop</p>
+      </div>
+      <div class="description">
+        <p>This is a description of the electronics category.</p>
+      </div>
+    </div>
+    <p class="info">Additional information</p>
+    <p class="info">Warranty rules</p>
   </body>
 </html>
