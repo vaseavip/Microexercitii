@@ -1,111 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <title>Fixed Sidebar Example</title>
     <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
+      div {
+        width: 180px;
+        height: 100px;
+        margin: 20px;
       }
 
-      /* Bară laterală fixată */
-      #sidebar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 220px;
-        height: 100vh; /* înălțimea completă a ferestrei */
-        background-color: #333;
-        color: white;
-        padding: 20px;
-        box-sizing: border-box;
+      #box1 {
+        background-color: #f0c419;
+        position: relative;
+        top: 70px;
+        left: 50px;
       }
 
-      /* Conținut principal cu marginea astfel încât să nu fie sub bara laterală*/
-      #main-content {
-        margin-left: 240px; /* lățimea barei laterale + puțin spațiu */
-        padding: 20px;
-      }
-
-      h2 {
-        margin-top: 0;
-      }
-
-      p {
-        line-height: 1.5;
+      #box2 {
+        background-color: #ed7161;
+        position: relative;
       }
     </style>
   </head>
   <body>
-    <div id="sidebar">
-      <h2>Sidebar</h2>
-      <p>Links and info here</p>
-      <ul>
-        <li>
-          <a href="#" style="color: white; text-decoration: none">Home</a>
-        </li>
-        <li>
-          <a href="#" style="color: white; text-decoration: none">About</a>
-        </li>
-        <li>
-          <a href="#" style="color: white; text-decoration: none">Contact</a>
-        </li>
-      </ul>
-    </div>
-
-    <div id="main-content">
-      <h1>Main Content</h1>
-      <p>
-        This is the main content area. Scroll the page and the sidebar will stay
-        fixed on the left.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar
-        lorem at sapien cursus, eu laoreet purus cursus. Vestibulum tincidunt,
-        nunc et semper pulvinar, lorem libero dictum elit, nec lacinia purus
-        justo at lorem. Curabitur pretium purus sit amet massa consectetur, a
-        pulvinar ex ornare.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar
-        lorem at sapien cursus, eu laoreet purus cursus. Vestibulum tincidunt,
-        nunc et semper pulvinar, lorem libero dictum elit, nec lacinia purus
-        justo at lorem. Curabitur pretium purus sit amet massa consectetur, a
-        pulvinar ex ornare.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar
-        lorem at sapien cursus, eu laoreet purus cursus. Vestibulum tincidunt,
-        nunc et semper pulvinar, lorem libero dictum elit, nec lacinia purus
-        justo at lorem. Curabitur pretium purus sit amet massa consectetur, a
-        pulvinar ex ornare.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar
-        lorem at sapien cursus, eu laoreet purus cursus. Vestibulum tincidunt,
-        nunc et semper pulvinar, lorem libero dictum elit, nec lacinia purus
-        justo at lorem. Curabitur pretium purus sit amet massa consectetur, a
-        pulvinar ex ornare.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar
-        lorem at sapien cursus, eu laoreet purus cursus. Vestibulum tincidunt,
-        nunc et semper pulvinar, lorem libero dictum elit, nec lacinia purus
-        justo at lorem. Curabitur pretium purus sit amet massa consectetur, a
-        pulvinar ex ornare.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar
-        lorem at sapien cursus, eu laoreet purus cursus. Vestibulum tincidunt,
-        nunc et semper pulvinar, lorem libero dictum elit, nec lacinia purus
-        justo at lorem. Curabitur pretium purus sit amet massa consectetur, a
-        pulvinar ex ornare.
-      </p>
-      <p>
-        (Add more content here to enable scrolling and see the fixed sidebar
-        effect)
-      </p>
-    </div>
+    <div id="box1"></div>
+    <div id="box2"></div>
   </body>
 </html>
