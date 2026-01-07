@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #row {
+        width: 90%;
+        max-width: 960px;
+        margin: 0 auto;
+      }
+
+      .column {
+        float: left;
+        width: 16.66%;
+        box-sizing: border-box;
+        padding: 8px;
+      }
+
+      .box {
+        height: 144px;
+        background-color: #914e67;
+      }
+      @media screen and (max-width: 1024px) {
+        .column {
+          width: 33.33%;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .column {
+          width: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="row">
+      <div class="column">
+        <div class="box"></div>
+      </div>
+      <div class="column">
+        <div class="box"></div>
+      </div>
+      <div class="column">
+        <div class="box"></div>
+      </div>
+      <div class="column">
+        <div class="box"></div>
+      </div>
+      <div class="column">
+        <div class="box"></div>
+      </div>
+      <div class="column">
+        <div class="box"></div>
+      </div>
+    </div>
+  </body>
+</html>
