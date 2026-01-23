@@ -1,17 +1,28 @@
 /* GLOBAL */
 html,
 body {
-  height: 100%;
   margin: 0;
   font-family: 'Orbitron', sans-serif;
   background-image: url('../img/background1.jpg');
   background-repeat: no-repeat;
-  background-size: cover; /* imaginea se întinde proporțional să acopere tot */
-  background-attachment: fixed; /* fundalul rămâne fix când dai scroll */
+  background-size: cover;
+  background-attachment: fixed; /* doar pe desktop */
   background-position: center;
   color: #fff;
+  min-height: 100vh;
 }
 
+/* Mobile */
+@media (max-width: 768px) {
+  body {
+    background-image: url('../img/background3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: local; /* mai compatibil decât fixed pe mobile */
+    min-height: 100%; /* se întinde automat odată cu conținutul */
+  }
+}
 /* NAVBAR */
 .mynavbar {
   background: rgba(255, 255, 255, 0.15);
@@ -83,6 +94,16 @@ section {
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
   border-radius: 40px;
+}
+
+@media (max-width: 768px) {
+  .skills {
+    background: transparent; /* face fundalul transparent */
+    backdrop-filter: none; /* dezactivează blur-ul */
+    -webkit-backdrop-filter: none; /* compatibil Safari */
+    border: none; /* optional, ca să dispară și bordura */
+    box-shadow: none; /* optional, dacă vrei să dispară și shadow */
+  }
 }
 .skills-grid {
   display: grid;
