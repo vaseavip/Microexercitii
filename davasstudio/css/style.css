@@ -103,6 +103,7 @@ section {
     -webkit-backdrop-filter: none; /* compatibil Safari */
     border: none; /* optional, ca să dispară și bordura */
     box-shadow: none; /* optional, dacă vrei să dispară și shadow */
+    margin-top: 0;
   }
 }
 .skills-grid {
