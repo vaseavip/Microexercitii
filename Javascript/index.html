@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First JS Example</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+      }
+      #main-container {
+        background-color: #f29484;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+
+      button {
+        background: transparent;
+        border: 2px solid white;
+        padding: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        color: white;
+        font-family: sans-serif;
+        font-weight: bold;
+      }
+
+      button:focus {
+        outline: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="main-container">
+      <button id="button" type="button">Click Me!</button>
+    </div>
+    <script>
+      document
+        .getElementById('button')
+        .addEventListener('click', toggleBgColor);
+
+      let counter = 0;
+      function toggleBgColor() {
+        counter++;
+
+        if (counter % 2 == 1) {
+          document.getElementById('main-container').style.backgroundColor =
+            '#026873';
+        } else {
+          document.getElementById('main-container').style.backgroundColor =
+            '#F29484';
+        }
+      }
+    </script>
+  </body>
+</html>
