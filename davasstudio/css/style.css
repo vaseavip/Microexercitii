@@ -3,26 +3,14 @@ html,
 body {
   margin: 0;
   font-family: 'Orbitron', sans-serif;
-  background-image: url('../img/background1.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; /* doar pe desktop */
-  background-position: center;
-  color: #fff;
-  min-height: 100vh;
+  background: repeating-linear-gradient(
+    to right bottom,
+    #080f2b,
+    #2f4b80,
+    #6078a4
+  );
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  body {
-    background-image: url('../img/background3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: local; /* mai compatibil decât fixed pe mobile */
-    min-height: 100%; /* se întinde automat odată cu conținutul */
-  }
-}
 /* NAVBAR */
 .mynavbar {
   background: rgba(255, 255, 255, 0.15);
@@ -30,7 +18,6 @@ body {
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-  border-radius: 0 0 16px 16px;
 }
 
 .mylogo {
@@ -48,15 +35,15 @@ body {
 
 /* CULORI NEON */
 .pink-neon {
-  color: #ff3cac;
-  text-shadow: 0 0 6px rgba(255, 60, 172, 0.8), 0 0 18px rgba(255, 60, 172, 0.6);
+  color: #02113d;
+  text-shadow: 0 0 6px rgba(241, 81, 81, 0.8), 0 0 18px rgba(255, 60, 60, 0.6);
 }
 .black-neon {
-  color: #111;
+  color: #02113d;
   text-shadow: 0 0 4px rgba(255, 255, 255, 0.4), 0 0 10px rgba(0, 0, 0, 0.6);
 }
 .cyan-neon {
-  color: #00f7ff;
+  color: #02113d;
   text-shadow: 0 0 6px rgba(0, 247, 255, 0.8), 0 0 20px rgba(0, 247, 255, 0.6),
     0 0 40px rgba(0, 247, 255, 0.4);
 }
@@ -93,7 +80,6 @@ section {
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-  border-radius: 40px;
 }
 
 @media (max-width: 768px) {
