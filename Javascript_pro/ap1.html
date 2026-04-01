@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //obiect literal
+      let user = {
+        name: 'Mihai',
+        lastName: 'Popescu',
+        age: 30,
+        email: 'mihai.popescu@example.com',
+      };
+      console.log(user.name + ' ' + user.lastName);
+
+      //functie care calculeaza pretul final dupa aplicarea unui discount
+      function calculateDiscountedPrice(price, discountPercent) {
+        return price - (price * discountPercent) / 100;
+      }
+      let pretFinal = calculateDiscountedPrice(100, 20);
+      console.log(pretFinal);
+
+      //functie care verifica disponibilitatea unui produs in stoc
+      function checkStock(quantity) {
+        if (quantity > 0) {
+          return 'Produsul este in stoc';
+        } else {
+          return 'Produsul nu este in stoc';
+        }
+      }
+      console.log(checkStock(5));
+      console.log(checkStock(0));
+      //funcție care generează un mesaj pentru utilizator după cumpărare
+      function generatePurchaseMessage(username, productName, price) {
+        return `${username} ai cumpărat ${productName} pentru ${price} lei. Mulțumim pentru achiziție!`;
+      }
+      console.log(generatePurchaseMessage('Ion', 'laptop', 1000));
+
+      //funcție care returnează o listă de produse care au prețul mai mic de 50.
+      function getCheapProducts(prices, limit) {
+        let cheapProducts = [];
+        for (let i = 0; i < prices.length; i++) {
+          if (prices[i] < limit) {
+            cheapProducts.push(prices[i]);
+          }
+        }
+        return cheapProducts;
+      }
+      let result = getCheapProducts([10, 20, 30, 40, 50, 60, 180, 165], 50);
+      console.log(result);
+      //scrieți funcția: calculateDiscount(total) Funcția trebuie să facă următoarele: Primește un parametru de intrare total (prețul total al cumpărăturilor). Dacă total este mai mare de 100, clientul primește 10% reducere. Dacă total este 100 sau mai mic, clientul nu primește reducere.Valoarea returnată: Funcția trebuie să returneze prețul final după aplicarea reducerii (sau prețul original dacă nu există reducere).
+      function calculateDiscount(total) {
+        if (total > 100) {
+          return total - (total * 10) / 100;
+        } else {
+          return total;
+        }
+      }
+      console.log(calculateDiscount(150)); // 135
+      console.log(calculateDiscount(80)); // 80
+      //functie care verifica daca un numar este par sau impar
+      function checkEvenOdd(number) {
+        if (number % 2 === 0) {
+          return 'Numarul este par';
+        } else {
+          return 'Numarul este impar';
+        }
+      }
+      console.log(checkEvenOdd(4)); // Numarul este par
+      console.log(checkEvenOdd(7)); // Numarul este impar
+
+      //functii constructor pentru a crea obiecte de tip produs
+      function User(name, LastName, Age) {
+        this.name = name;
+        this.LastName = LastName;
+        this.Age = Age;
+      }
+      let user1 = new User('Mihai', 'Popescu', 30);
+      let user2 = new User('Ion', 'Ionescu', 25);
+      console.log(user2);
+      console.log(user1);
+
+      //functie care calculeaza pretul final dupa aplicarea TVA-ului
+      let priceWithVat = function (price, vatPercent) {
+        return price + (price * vatPercent) / 100;
+      };
+      console.log(priceWithVat(100, 20)); // 120
+      //functie care calculeaza pretul final dupa aplicarea unui discount si adaugarea TVA-ului
+      function calculateDiscountedPrice(price, discount) {
+        let discountedPrice = price * (1 - discount / 100);
+        let finalPrice = discountedPrice + (discountedPrice * 20) / 100; // adaugam TVA de 20%
+        return finalPrice;
+      }
+      console.log(calculateDiscountedPrice(200, 10)); // 216
+
+      //obiecte pe clase
+      class Carte {
+        constructor(titlu, autor, editura, an, pret) {
+          this.titlu = titlu;
+          this.autor = autor;
+          this.editura = editura;
+          this.an = an;
+          this.pret = pret;
+        }
+        deschidCartea() {
+          console.log('amdeschiscartealapagina 15');
+        }
+        randomIntFromInterval(min, max) {
+          // min and max included
+          return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+      }
+    </script>
+  </body>
+</html>
