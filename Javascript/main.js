@@ -22,3 +22,7 @@ function myFunction() {
   contor++;
   console.log('Contor: ' + contor);
 }
+
+for (var i = 0; i < 5; i++) {
+  console.log(i);
+}
